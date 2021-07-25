@@ -1,4 +1,5 @@
 
+
 # EVA6_Assignments_Session10
 EVA6 Assignment for Session 10
 
@@ -107,16 +108,29 @@ A bounding box in essence, is a rectangle that surrounds an object, that specifi
 <img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/bb.png?raw=true" width =500><br>
 <em style="color: grey">Figure 5 : Scatter plot for normalized BB dimensions </em>
  </p> 
+ 
+**What is a Anchor box?**
 
-<p align="center" style="padding: 10px">
-<img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/elbow.png?raw=true" width =500><br>
-<em style="color: grey">Figure 6 : Elbow method </em>
- </p> 
+Anchor boxes are a set of template bounding boxes which the object detection model use to make a bounding box.
 
-<p align="center" style="padding: 10px">
-<img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/iou.png?raw=true" width =500><br>
-<em style="color: grey">Figure 7 : Mean IOU </em>
- </p> 
+State of the art object detection systems currently do the following:
+
+1. Create thousands of “anchor boxes” or “prior boxes” for each predictor that represent the ideal location, shape and size of the object it specializes in predicting. In order to determine the ideal number of boxes we need, we use **K-means clustering**.
+
+
+
+2. For each anchor box, calculate which object’s bounding box has the highest overlap divided by non-overlap. This is called **Intersection Over Union** or IOU.
+
+3. If the highest IOU is greater than 50%, tell the anchor box that it should detect the object that gave the highest IOU.
+
+4. Otherwise if the IOU is greater than 40%, tell the neural network that the true detection is ambiguous and not to learn from that example.
+
+5. If the highest IOU is less than 40%, then the anchor box should predict that there is no object.
+
+
+
+|<p align="center" style="padding: 10px"><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/elbow.png?raw=true" width =500><br><em style="color: grey">Figure 6 : Elbow method </em></p> |<p align="center" style="padding: 10px"><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/iou.png?raw=true" width =500><br><em style="color: grey">Figure 7 : Mean IOU </em></p> |
+|--|--|
 
 |Clusters|Anchor boxes |
 |--|--|
@@ -124,5 +138,7 @@ A bounding box in essence, is a rectangle that surrounds an object, that specifi
 | <p align="left" style="padding: 10px"><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/k4.png?raw=true" width =300><br></p>| <p align="right" style="padding: 10px"><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/bb4.png?raw=true" width =300><br> </p>  |
 | <p align="left" style="padding: 10px"><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/k5.png?raw=true" width =300><br></p>| <p align="right" style="padding: 10px"><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/bb5.png?raw=true" width =300><br></p>  |
 | <p align="left" style="padding: 10px"><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/k6.png?raw=true" width =300><br></p>| <p align="right" style="padding: 10px"><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/bb6.png?raw=true" width =300><br></p>  |
+
+
 
 
