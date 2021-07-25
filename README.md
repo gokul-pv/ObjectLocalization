@@ -19,7 +19,7 @@ There are two main approaches to driving detection algorithms, namely:
 
 ## Part A: [TinyImageNet](https://github.com/gokul-pv/EVA6_Assignments_Session10/tree/main/PartA)
 
-Objective:
+**Objective**:
 -   Download this  [TINY IMAGENET](http://cs231n.stanford.edu/tiny-imagenet-200.zip) dataset.
 -   Train ResNet18 on this dataset (70/30 split) for 50 Epochs. Target 50%+ Validation Accuracy.
 
@@ -53,22 +53,47 @@ Objective:
  </p> 
 
 
-# Analyzing COCO data format
+## Part B: Analyzing COCO data format
 
 
   
 ## Coco Dataset:
 
-We will be using a sample subset of data [link](https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/PartB/sample_coco.txt)
+**Objective**
+1.   Learn how COCO ([link](https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/PartB/sample_coco.txt)) object detection dataset's schema is . This file has the same schema. You'll need to discover what those number are.
+2. Identify these things for this dataset:
+    -  Class distribution (along with the class names) along with a graph
+    -  Calculate the Anchor Boxes for k = 3, 4, 5, 6 and draw them.
 
-The data format for bounding box is
+**What is The COCO Dataset?**
 
-- COCO Bounding box: (x-top left, y-top left, width, height) 
+COCO annotations are inspired by the [Common Objects in Context (COCO) dataset](http://cocodataset.org). 
 
-An example is
-    id: 0, height: 330, width: 1093, bbox:[69, 464, 312, 175],
+> "COCO is a large-scale object detection, segmentation, and captioning dataset. COCO has several features: Object segmentation, Recognition in context, Superpixel stuff segmentation, 330K images (>200K labeled), 1.5 million object instances, 80 object categories, 91 stuff categories, 5 captions per image, 250,000 people with keypoints."
+
+It is one of the best image datasets available, so it is widely used in cutting edge image recognition artificial intelligence research. It is used in open source projects such as 
+- [Facebook Research's Detectron](https://github.com/facebookresearch/Detectron), 
+- [Matterport's Mask R-CNN](https://github.com/matterport/Mask_RCNN), 
+- [endernewton's Tensorflow Faster RCNN](https://github.com/endernewton/tf-faster-rcnn) 
+- for Object Detection, and others.
+
+**COCO Dataset Format**
+The COCO dataset is formatted in JSON and is a collection of “info”, “licenses”, “images”, “annotations”, “categories” (in most cases), and “segment info”.
+
+An example of data from ([link](https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/PartB/sample_coco.txt)) is shown below: 
+
+>    id: 1, height: 782, width: 439, bbox:[359, 292, 83, 199]
 
     id     - Image Id
     height - Image Original Height
     width  - Image Original Width
     bbox   - Bounding Box in COCO format (x-top left, y-top left, width, height)
+
+**Class Distribution**
+There are 80 categories in the provided dataset and its distribution is shown below:
+
+<p align="center" style="padding: 10px">
+<img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/ClassDistribution.png?raw=true" width =1000><br>
+<em style="color: grey">Figure 4 : COCO class distribution </em>
+ </p> 
+
