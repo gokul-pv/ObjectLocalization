@@ -120,13 +120,9 @@ A bounding box in essence, is a rectangle that surrounds an object, that specifi
 
 |Clusters|Anchor boxes |
 |--|--|
-| <p align="left" style="padding: 10px"><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/k3.png?raw=true" width =300><br></p>| <p align="right" style="padding: 10px"><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/bb3.png?raw=true" width =300><br>
- </p>  |
- | <p align="left" style="padding: 10px"><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/k4.png?raw=true" width =300><br></p>| <p align="right" style="padding: 10px"><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/bb4.png?raw=true" width =300><br>
- </p>  |
- | <p align="left" style="padding: 10px"><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/k5.png?raw=true" width =300><br></p>| <p align="right" style="padding: 10px"><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/bb5.png?raw=true" width =300><br>
- </p>  |
- | <p align="left" style="padding: 10px"><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/k6.png?raw=true" width =300><br></p>| <p align="right" style="padding: 10px"><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/bb6.png?raw=true" width =300><br>
- </p>  |
+| <p align="left" style="padding: 10px"><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/k3.png?raw=true" width =300><br></p>| <p align="right" style="padding: 10px"><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/bb3.png?raw=true" width =300><br></p>  |
+| <p align="left" style="padding: 10px"><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/k4.png?raw=true" width =300><br></p>| <p align="right" style="padding: 10px"><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/bb4.png?raw=true" width =300><br> </p>  |
+| <p align="left" style="padding: 10px"><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/k5.png?raw=true" width =300><br></p>| <p align="right" style="padding: 10px"><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/bb5.png?raw=true" width =300><br></p>  |
+| <p align="left" style="padding: 10px"><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/k6.png?raw=true" width =300><br></p>| <p align="right" style="padding: 10px"><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/bb6.png?raw=true" width =300><br></p>  |
 
 
