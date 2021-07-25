@@ -53,7 +53,7 @@ There are two main approaches to driving detection algorithms, namely:
  </p> 
 
 
-## Part B: Analyzing COCO data format
+## Part B: Analyzing COCO data format ([Link](https://github.com/gokul-pv/EVA6_Assignments_Session10/tree/main/PartB))
 
 
   
@@ -78,6 +78,7 @@ It is one of the best image datasets available, so it is widely used in cutting 
 - for Object Detection, and others.
 
 **COCO Dataset Format**
+
 The COCO dataset is formatted in JSON and is a collection of “info”, “licenses”, “images”, “annotations”, “categories” (in most cases), and “segment info”.
 
 An example of data from ([link](https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/PartB/sample_coco.txt)) is shown below: 
@@ -90,10 +91,42 @@ An example of data from ([link](https://github.com/gokul-pv/EVA6_Assignments_Ses
     bbox   - Bounding Box in COCO format (x-top left, y-top left, width, height)
 
 **Class Distribution**
+
 There are 80 categories in the provided dataset and its distribution is shown below:
 
 <p align="center" style="padding: 10px">
 <img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/ClassDistribution.png?raw=true" width =1000><br>
 <em style="color: grey">Figure 4 : COCO class distribution </em>
  </p> 
+
+**What is a bounding box?**
+
+A bounding box in essence, is a rectangle that surrounds an object, that specifies its **position**, **class**(eg: car, person) and **confidence**(how likely it is to be at that location). Bounding boxes are mainly used in the task of object detection, where the aim is identifying the position and type of multiple objects in the image.
+
+<p align="center" style="padding: 10px">
+<img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/bb.png?raw=true" width =500><br>
+<em style="color: grey">Figure 5 : Scatter plot for normalized BB dimensions </em>
+ </p> 
+
+<p align="center" style="padding: 10px">
+<img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/elbow.png?raw=true" width =500><br>
+<em style="color: grey">Figure 6 : Elbow method </em>
+ </p> 
+
+<p align="center" style="padding: 10px">
+<img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/iou.png?raw=true" width =500><br>
+<em style="color: grey">Figure 7 : Mean IOU </em>
+ </p> 
+
+|Clusters|Anchor boxes |
+|--|--|
+| <p align="left" style="padding: 10px"><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/k3.png?raw=true" width =300><br></p>| <p align="right" style="padding: 10px"><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/bb3.png?raw=true" width =300><br>
+ </p>  |
+ | <p align="left" style="padding: 10px"><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/k4.png?raw=true" width =300><br></p>| <p align="right" style="padding: 10px"><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/bb4.png?raw=true" width =300><br>
+ </p>  |
+ | <p align="left" style="padding: 10px"><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/k5.png?raw=true" width =300><br></p>| <p align="right" style="padding: 10px"><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/bb5.png?raw=true" width =300><br>
+ </p>  |
+ | <p align="left" style="padding: 10px"><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/k6.png?raw=true" width =300><br></p>| <p align="right" style="padding: 10px"><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/bb6.png?raw=true" width =300><br>
+ </p>  |
+
 
