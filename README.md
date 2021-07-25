@@ -35,9 +35,22 @@ Objective:
 1.  Best train Accuracy - 77.83%
 2.  Best test Accuracy - 57.55%
 
-
+<p align="center" style="padding: 10px">
+<img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/log23-30.png?raw=true" width =500><br>
+<em style="color: grey">Figure 1 : Training log</em>
+ </p> 
+ 
+<p align="center" style="padding: 10px">
+<img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/Accuracy.png?raw=true" width =500><br>
+<em style="color: grey">Figure 2 : Accuracy plot</em>
+ </p> 
 
 **GradCam on MisClassified Images**
+
+<p align="center" style="padding: 10px">
+<img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Assignments_Session10/blob/main/Images/GradCam.png?raw=true" width =500><br>
+<em style="color: grey">Figure 3 : GradCam</em>
+ </p> 
 
 
 # Analyzing COCO data format
